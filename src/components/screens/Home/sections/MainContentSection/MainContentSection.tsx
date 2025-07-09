@@ -12,7 +12,7 @@ export const MainContentSection = (): JSX.Element => {
 
   return (
     <section className="w-full bg-black py-16">
-      <div className="flex flex-col items-center max-w-[1085px] mx-auto px-4">
+      <div className="flex flex-col max-w-[1085px] mx-auto px-2">
         <h2 className="text-white text-[48px] font-bold font-heading-desktop-h2 leading-[120%] tracking-[0px] text-center mb-6">
           About Us
         </h2>

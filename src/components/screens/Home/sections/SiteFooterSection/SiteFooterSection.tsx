@@ -8,16 +8,26 @@ import Image from "next/image";
 export const SiteFooterSection = (): JSX.Element => {
   return (
     <footer className="w-full bg-black py-6 px-4 md:px-16">
-      <div className="container mx-auto max-w-7xl">
+      <div className="container-fluid mx-auto max-w-12xl">
         <div className="flex flex-col md:flex-row justify-between gap-8 mb-12">
           {/* Logo section */}
           <div className="flex flex-col gap-8">
             <div className="bg-[linear-gradient(90deg,rgba(245,56,56,1)_0%,rgba(1,243,253,1)_100%)] [-webkit-background-clip:text] bg-clip-text [-webkit-text-fill-color:transparent] [text-fill-color:transparent] [font-family:'Sansita_One-Regular',Helvetica] font-normal text-transparent text-2xl tracking-[-0.55px]">
               {""}
             </div>
-            <div className="flex flex-col gap-6">
-              <div className="w-[84px] h-9 bg-gray-600 rounded"></div>
-            </div>
+           <div className="flex flex-col gap-6">
+  <div className="flex flex-col gap-6">
+  <Image
+    src="/sl360_logo.png"
+    alt="Logo"
+    width={200}
+    height={60}
+    priority
+  />
+</div>
+
+</div>
+
           </div>
 
           {/* Contact form section */}
