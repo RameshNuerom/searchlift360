@@ -45,7 +45,7 @@ export const OverflowHiddenSection = (): JSX.Element => {
         <Button className="bg-[#ffa400] text-black font-medium rounded-md h-[37px] w-[150px] hover:bg-[#ffa400]/90">
           Get Started
         </Button>
-      </div> */} */}
+      </div> */} 
 
       {/* Features Section */}
       <div className="w-full bg-black py-24 mt-8">
