@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export const SiteFooterSection = (): JSX.Element => {
   return (
-    <footer className="w-full bg-black py-6 px-4 md:px-16">
+  <footer id="contact" className="w-full bg-black py-6 px-4 md:px-16">
       <div className="container-fluid mx-auto max-w-12xl">
         <div className="flex flex-col md:flex-row justify-between gap-8 mb-12">
           {/* Logo section */}
@@ -18,9 +18,9 @@ export const SiteFooterSection = (): JSX.Element => {
            <div className="flex flex-col gap-6">
   <div className="flex flex-col gap-6">
   <Image
-    src="/sl360_logo.png"
+    src="/my_logo.png"
     alt="Logo"
-    width={200}
+    width={350}
     height={60}
     priority
   />

@@ -52,7 +52,7 @@ export const FeaturesSection = (): JSX.Element => {
         </Card>
 
         <Image
-          className="hidden md:block w-[840px] h-[671px] object-cover absolute right-0"
+          className="hidden md:block w-[840px] h-[671px] object-cover absolute right-[-50px]"
           alt="Data platform visualization"
           src="/image-33.png"
           width={840}
