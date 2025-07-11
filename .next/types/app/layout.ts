@@ -1,4 +1,4 @@
-// File: D:\01_Projects\Nextjs\searchlift360\app\layout.tsx
+// File: D:\Neurom\searchlift360\app\layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

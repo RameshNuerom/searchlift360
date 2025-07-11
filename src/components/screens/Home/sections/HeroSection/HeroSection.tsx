@@ -10,32 +10,36 @@ const HeroSection: React.FC = () => {
       style={{ backgroundImage: "url('/image--absolute-.png')" }}
     >
       {/* Top Header Row: Logo on left, CTA on right */}
-      <div className="absolute top-[20px] left-0 right-0 px-6 flex justify-between items-center">
-        {/* Left: Logo */}
-        <div className="flex items-center">
-          <Image
-            src="my_logo.png"
-            alt="Logo"
-            width={350}
-            height={350}
-            priority
-          />
-        </div>
+     {/* Top Header Row: Logo on left, CTA on right */}
+<div className="w-full px-4 sm:px-6 md:px-12 py-4 flex flex-col sm:flex-row justify-between items-center gap-4 bg-transparent relative z-50">
+  {/* Left: Logo */}
+  <div className="flex items-center justify-center sm:justify-start w-full sm:w-auto">
+    <Image
+      src="/my_logo.png"
+      alt="Logo"
+      width={200}
+      height={60}
+      className="w-auto h-[40px] sm:h-[50px] object-contain"
+      priority
+    />
+  </div>
 
-        {/* Right: Text + Button */}
-        <div className="flex items-center gap-6 mr-10">
-          <div className="font-bold text-white text-sm sm:text-base font-['Montserrat',Helvetica]">
-            From search to sale—make AI work for you.
-          </div>
-          <a href="#contact" className="bg-[#ffa400] text-black font-medium rounded-md h-[37px] w-[150px] hover:bg-[#ffa400]/90 flex items-center justify-center">
-  Contact Us
-</a>
-
-        </div>
-      </div>
+  {/* Right: Text + Button */}
+  <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-6 w-full sm:w-auto text-center sm:text-left">
+    <div className="font-bold text-white text-sm sm:text-base font-['Montserrat',Helvetica]">
+      From search to sale—make AI work for you.
+    </div>
+    <a
+      href="#contact"
+      className="bg-[#ffa400] text-black font-medium rounded-md px-4 py-2 hover:bg-[#ffa400]/90 text-sm sm:text-base"
+    >
+      Contact Us
+    </a>
+  </div>
+</div>
 
       {/* Centered Content */}
-      <div className="relative w-full max-w-[800px] mx-auto pt-[150px] px-4">
+      <div className="relative w-full max-w-[800px] mx-auto pt-[80px] px-4">
         <div className="text-center">
           <h1 className="font-medium text-[56.1px] tracking-[-2.24px] leading-[64.4px] mb-12 font-['Inter',Helvetica] text-white">
             Is your brand AI conversation ready?

@@ -22,7 +22,7 @@ export const PageLayoutSection = (): JSX.Element => {
       <div className="w-full py-20 md:py-28 flex flex-col-reverse md:flex-row items-center">
 
         {/* Text Section */}
-        <div className="flex flex-col items-start gap-8 max-w-full md:max-w-[714px] pl-6 md:pl-12">
+        <div className="flex flex-col items-start gap-8 max-w-full md:max-w-[714px] pl-6 md:pl-12 mt-12 md:mt-0">
           <div className="flex flex-col items-start gap-6 w-full">
             <h2 className="text-white text-[32px] sm:text-[40px] md:text-[48px] leading-[120%] font-bold font-heading-desktop-h2">
               Ready to own every AI recommendation?
@@ -44,7 +44,7 @@ export const PageLayoutSection = (): JSX.Element => {
 
         {/* Image Section */}
       
-       <div className="relative shrink-0 ml-auto">
+       <div className="relative shrink-0 ml-auto mt-12 md:mt-0">
   <Image
     className="w-[220px] sm:w-[260px] md:w-[287px] h-auto"
     alt="Mobile device showing AI conversation"
