@@ -44,7 +44,7 @@ export const PageLayoutSection = (): JSX.Element => {
 
         {/* Image Section */}
       
-       <div className="relative shrink-0 ml-auto mt-12 md:mt-0">
+      <div className="relative shrink-0 ml-auto mt-12 md:mt-0 max-[375px]:mt-32">
   <Image
     className="w-[220px] sm:w-[260px] md:w-[287px] h-auto"
     alt="Mobile device showing AI conversation"

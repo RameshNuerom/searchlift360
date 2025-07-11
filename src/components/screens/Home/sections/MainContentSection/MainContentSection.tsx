@@ -12,33 +12,33 @@ export const MainContentSection = (): JSX.Element => {
   ];
 
   return (
-    <section className=" w-full bg-black">
-      <div className="relative max-w-[2080px] mx-auto px-4">
-        <h2 className="relative text-white text-[32px] sm:text-[40px] md:text-[48px] font-bold mb-12 text-center md:text-center md:ml-[-1rem]">
+    <section className="w-full bg-black px-4 py-8 sm:px-6 md:px-12 md:py-16">
+      <div className="relative max-w-[1280px] mx-auto">
+        <h2 className="text-white text-[32px] sm:text-[40px] md:text-[48px] font-bold mb-8 md:mb-12 text-center">
           About Us
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
-          {/* Left: Image (5/12) */}
-          <div className="col-span-12 md:col-span-5 flex justify-center">
-           <Image
-  src="/AboutUs.png"
-  alt="Our Lab"
-  className="w-full h-auto max-w-[90%] sm:max-w-[500px] md:max-w-[600px] object-contain"
-  width={600}
-  height={600}
-  priority
-/>
-
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-center">
+          {/* Left: Image */}
+          <div className="col-span-12 md:col-span-5 flex justify-center md:justify-end items-center px-2 sm:px-4"> {/* Changed to md:justify-end for potentially better alignment with text */}
+            <Image
+              src="/AboutUs.png"
+              alt="Our Lab"
+              // Adjusted image sizing for desktop view to be larger
+              className="w-full max-w-[280px] xs:max-w-[320px] sm:max-w-[400px] md:max-w-[550px] lg:max-w-[700px] h-auto object-contain" // Increased max-width for md and lg
+              width={700} // Increased base width for larger screens
+              height={700} // Increased base height for larger screens
+              priority
+            />
           </div>
 
-          {/* Right: Text (7/12) */}
+          {/* Right: Text */}
           <div className="col-span-12 md:col-span-7">
             <Card className="bg-transparent border-0">
               <CardContent className="p-0">
-                <div className="font-['Roboto',Helvetica] font-normal text-white text-lg leading-8 space-y-5 text-justify">
+                <div className="font-['Roboto',Helvetica] text-white text-base sm:text-lg leading-8 space-y-4 px-2 sm:px-4">
                   {aboutUsContent.map((paragraph, index) => (
-                    <p key={index} className="whitespace-pre-line">
+                    <p key={index} className="whitespace-pre-line text-left">
                       {paragraph}
                     </p>
                   ))}

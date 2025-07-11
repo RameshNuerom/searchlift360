@@ -26,20 +26,24 @@ const HeroSection: React.FC = () => {
 
   {/* Right: Text + Button */}
   <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-6 w-full sm:w-auto text-center sm:text-left">
-    <div className="font-bold text-white text-sm sm:text-base font-['Montserrat',Helvetica]">
-      From search to sale—make AI work for you.
-    </div>
-    <a
-      href="#contact"
-      className="bg-[#ffa400] text-black font-medium rounded-md px-4 py-2 hover:bg-[#ffa400]/90 text-sm sm:text-base"
-    >
-      Contact Us
-    </a>
+  {/* Text (visible only on md and above) */}
+  <div className="font-bold text-white text-sm sm:text-base font-['Montserrat',Helvetica] hidden md:block">
+    From search to sale—make AI work for you.
   </div>
+
+  {/* CTA Button (always visible) */}
+  <a
+    href="#contact"
+    className="bg-[#ffa400] text-black font-medium rounded-md px-4 py-2 hover:bg-[#ffa400]/90 text-sm sm:text-base hidden md:block"
+  >
+    Contact Us
+  </a>
+</div>
+
 </div>
 
       {/* Centered Content */}
-      <div className="relative w-full max-w-[800px] mx-auto pt-[80px] px-4">
+      <div className="relative w-full max-w-[800px] mx-auto pt-[60px] px-4">
         <div className="text-center">
           <h1 className="font-medium text-[56.1px] tracking-[-2.24px] leading-[64.4px] mb-12 font-['Inter',Helvetica] text-white">
             Is your brand AI conversation ready?
